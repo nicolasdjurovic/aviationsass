@@ -1,0 +1,265 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+#footer, #content, #header #tagline div, #header nav ul, #header #section {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+#header #section {
+  overflow: hidden;
+}
+
+#header {
+  background: #274F75;
+}
+#header #section {
+  height: 150px;
+  line-height: 150px;
+}
+#header #section div {
+  float: left;
+}
+#header #section div a {
+  display: block;
+}
+#header #section div a img {
+  vertical-align: middle;
+}
+#header #section span {
+  margin-top: 50px;
+  color: #ffff;
+  display: block;
+  float: right;
+  line-height: 150px;
+}
+#header #section span p {
+  line-height: 18px;
+}
+#header #section span p:first-child {
+  margin-bottom: 15px;
+}
+#header nav {
+  background: #84bf0e;
+  border-bottom: 1px solid #c31408;
+}
+#header nav ul {
+  display: flex;
+}
+#header nav ul li a {
+  display: block;
+  padding: 12px 25px;
+  text-decoration: none;
+  color: #274F75;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  transition: background 0.3s;
+}
+#header nav ul li a:hover {
+  background: #fff;
+}
+#header nav ul li a:hover::after {
+  background: #c31408;
+}
+#header nav ul li a::after {
+  content: "";
+  background: transparent;
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  transition: background 0.3s;
+}
+#header #tagline {
+  background: url("../images/bg-header2.jpg");
+  background-position-x: center;
+  min-height: 450px;
+}
+#header #tagline div {
+  padding-top: 105px;
+}
+#header #tagline div h1 {
+  font-size: 60px;
+  font-family: Arial;
+  font-weight: 700;
+  color: #274F75;
+  max-width: 445px;
+  line-height: 76px;
+  margin-bottom: 30px;
+}
+#header #tagline div p {
+  font-family: "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  color: #274F75;
+  max-width: 340px;
+  line-height: 35px;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#content #aside {
+  grid-column: span 2;
+  grid-row: 1;
+}
+#content #aside div h1 {
+  font-size: 30px;
+}
+#content #aside div .last {
+  font-weight: 700;
+  color: #c31408;
+}
+#content #aside div img {
+  padding: 10px;
+  border: 1px solid #c31408;
+  margin: 10px 0;
+  margin-right: 10px;
+  float: left;
+}
+#content #aside div p {
+  margin: 10px 0;
+}
+#content #aside2 {
+  grid-column: span 2;
+  grid-row: 2;
+}
+#content #aside2 ul {
+  display: flex;
+}
+#content #aside2 ul h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#content #aside2 ul h2 a {
+  text-decoration: none;
+  color: black;
+}
+#content #aside2 ul .last {
+  color: #c31408;
+  font-weight: 700;
+}
+#content #calendar {
+  grid-column: 3;
+  grid-row: 1/3;
+}
+#content #calendar h3 {
+  font-size: 30px;
+  color: #c31408;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#content #calendar div {
+  display: flex;
+}
+#content #calendar h2 {
+  margin-left: 10px;
+  font-weight: 700;
+}
+#content #calendar h2 a {
+  text-decoration: none;
+  color: #274F75;
+}
+#content #calendar span {
+  width: 35px;
+  height: 35px;
+  background-color: #274F75;
+  color: #fff;
+}
+#content #calendar p {
+  margin: 10px 0;
+}
+#content #calendar .line {
+  border-top: 1px solid #274F75;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footerwrapper {
+  background-color: #274F75;
+}
+
+#footer {
+  display: flex;
+  background-color: #274F75;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+#footer .section {
+  justify-content: flex-end;
+}
+#footer .section ul {
+  display: flex;
+}
+#footer .section ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+#footer .sectionline {
+  border-left: 1px solid white;
+  height: 16px;
+  margin: 0 10px;
+}
+#footer .section p {
+  color: white;
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */
